@@ -1,0 +1,212 @@
+{
+  "project_name": "NoodleWala.com - The World of Noodles",
+  "app_type": "hybrid_fullstack_editorial_retail",
+  "theme_mode": "light_primary_with_deep_ink_accents",
+  "tagline": "THE WORLD OF NOODLES",
+  "brand_essence": "A distinctive, editorial, high-end specialty noodle retail and franchise destination that treats authentic regional noodles like single-origin coffees or grand cru wines. It brings curated artisanal noodles from Japan, Korea, China, Thailand, Vietnam, Indonesia, India, and World Specials under one roof with an experiential 'Try & Buy' tasting bar model.",
+  "design_archetype": "Organic & Earthy meets Swiss Editorial Luxury (Artisanal Food Provenance with Crisp Botanical Ink and Gold Seals)",
+  "color_palette": {
+    "primary": "#00704A",
+    "primary_description": "NoodleWala Signature Forest Green - used for primary key brand moments, primary CTAs, active status, badges",
+    "deep_green_ink": "#063B2B",
+    "deep_green_ink_description": "Deep Green/Ink - used for authoritative headers, hero banners, statement quote bands, dark contrasting footer",
+    "dark_text_green": "#123D2D",
+    "dark_text_green_description": "Primary high-contrast body & title text on light backgrounds (ensures 10:1+ APCA/WCAG contrast)",
+    "secondary_green": "#1B8A63",
+    "secondary_green_description": "Secondary Green - used for secondary tags, origin highlights, filter pills, map markers",
+    "gold_accent": "#C9A227",
+    "gold_accent_description": "Craft Gold Accent - used exclusively for premium origin crests, tasting award stamps, 'Try & Buy' badges, authentic certified stamps, star ratings",
+    "light_background": "#F7FAF6",
+    "light_background_description": "Warm porcelain matcha-hued canvas background - provides breathing room, warmth, organic tactile depth",
+    "white": "#FFFFFF",
+    "white_description": "Pure crisp surface cards, floating menus, modals, and store cards with subtle borders",
+    "muted_text": "#5F6F67",
+    "muted_text_description": "Secondary metadata, broth notes, provenance origin coordinates, opening hours",
+    "border_stroke": "#D7E4DC",
+    "border_stroke_description": "Subtle structured 1px botanical line for cards, tables, grid borders and separators"
+  },
+  "forbidden_styles": [
+    "Overly playful cartoon noodle graphics or mascot illustrations",
+    "Generic restaurant takeout template layouts with red/yellow fast-food palettes",
+    "Cheap gradients (>20% opacity) or generic SaaS purple/blue #7351B7 gradients",
+    "Inter or default sans-serif font for H1/H2 headings",
+    "Center-everything disease without dynamic asymmetric editorial tension",
+    "Transparent dropdowns, transparent headers without blur/solid fill",
+    "Universal CSS transitions (transition: all)",
+    "AI emojis like 🤖, 🧠, 💡 for icons"
+  ],
+  "typography": {
+    "google_fonts_to_import": "https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "heading_font_family": "'Playfair Display', serif",
+    "display_punch_font": "'Cabinet Grotesk', sans-serif",
+    "body_font_family": "'IBM Plex Sans', -apple-system, sans-serif",
+    "metadata_mono_font": "'JetBrains Mono', monospace",
+    "scale": {
+      "h1_hero": "text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.08]",
+      "h2_section": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight leading-snug",
+      "h3_sub": "text-xl sm:text-2xl font-semibold tracking-normal",
+      "h4_card": "text-lg sm:text-xl font-semibold",
+      "eyebrow_label": "text-xs uppercase font-mono tracking-[0.22em] text-[#C9A227] font-semibold",
+      "body_lead": "text-base sm:text-lg text-[#123D2D]/90 leading-relaxed",
+      "body_regular": "text-sm sm:text-base text-[#123D2D] leading-relaxed",
+      "body_muted": "text-xs sm:text-sm text-[#5F6F67] leading-normal",
+      "tag_spec": "text-[11px] font-mono tracking-wider uppercase px-2.5 py-1 rounded-sm"
+    }
+  },
+  "surface_and_elevation": {
+    "page_background": "bg-[#F7FAF6]",
+    "card_style": "bg-white border border-[#D7E4DC] rounded-xl shadow-[0_4px_20px_-4px_rgba(6,59,43,0.05)] hover:shadow-[0_12px_28px_-6px_rgba(6,59,43,0.12)] hover:border-[#1B8A63]/50 transition-all duration-300",
+    "hero_dark_band": "bg-[#063B2B] text-white border-b border-[#1B8A63]/30",
+    "gold_badge": "bg-[#C9A227]/10 text-[#C9A227] border border-[#C9A227]/40 font-mono text-xs px-2.5 py-0.5 rounded-full inline-flex items-center gap-1.5",
+    "sticky_header": "sticky top-0 z-50 backdrop-blur-xl bg-[#F7FAF6]/90 border-b border-[#D7E4DC]/80",
+    "modal_dialog": "bg-white border border-[#D7E4DC] rounded-2xl shadow-2xl p-6 sm:p-8"
+  },
+  "layout_grid_modes": {
+    "homepage_collections_tetris": "Mode A Tetris Asymmetric Grid: Japan & Korea feature large dual-span cards with provenance badges, while China, Thailand, Vietnam, Indonesia, India, and World Specials occupy deliberate supporting cards with spice meters and broth types.",
+    "product_catalog_mode": "Responsive 3-column or 4-column product grid with sticky filter sidebar (Origin country, Heat level 1-5, Broth style: Dry/Rich/Clear, Dietary: Vegan/Egg/Gluten-Free, Prep time: 3min/8min/Artisanal).",
+    "store_locator_mode": "Split screen layout with left interactive store directory (with 'Try & Buy Available' badge, directions, phone, hours) and right interactive store preview/map mock card.",
+    "ticket_support_mode": "High clarity support portal with active status tracker, quick category cards, and responsive ticket submission dialog with live confirmation ticket ID generator."
+  },
+  "image_urls": {
+    "hero_main_bowl": {
+      "url": "https://images.unsplash.com/photo-1623341214825-9f4f963727da?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTV8MHwxfHNlYXJjaHwyfHxqYXBhbmVzZSUyMHJhbWVuJTIwYm93bCUyMG5vb2RsZXMlMjBzdGVhbXxlbnwwfHx8fDE3ODk3NjQ3ODd8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Authentic Japanese hand-crafted ramen in traditional ceramic bowl with bamboo chopsticks",
+      "placement": "Homepage Hero main feature image & About Page Craft section"
+    },
+    "hero_secondary_tasting": {
+      "url": "https://images.pexels.com/photos/16671586/pexels-photo-16671586.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Steaming noodles lifted with chopsticks showcasing silky rich broth and texture",
+      "placement": "Try & Buy Sampling Page and Homepage Try & Buy highlight section"
+    },
+    "origin_japan_ramen": {
+      "url": "https://images.pexels.com/photos/16671603/pexels-photo-16671603.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Tokyo Shoyu Ramen with soft-boiled ajitsuke tamago and spring scallions",
+      "placement": "Collections Japan & Featured Product card"
+    },
+    "origin_china_dan_dan": {
+      "url": "https://images.unsplash.com/photo-1585032226651-759b368d7246?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxhc2lhbiUyMG5vb2RsZXMlMjBnb3VybWV0JTIwZGlzaCUyMGJvd2x8ZW58MHx8fHwxNzg5NzY0Nzg3fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Sichuan artisan wok noodles with crushed peanuts, chili crisp and scallions",
+      "placement": "Collections China & Stir-fry product showcase"
+    },
+    "origin_korea_ramyeon": {
+      "url": "https://images.unsplash.com/photo-1526318896980-cf78c088247c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwyfHxhc2lhbiUyMG5vb2RsZXMlMjBnb3VybWV0JTIwZGlzaCUyMGJvd2x8ZW58MHx8fHwxNzg5NzY0Nzg3fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Fiery Korean gochujang broth noodles with golden yolk and toasted seaweed",
+      "placement": "Collections Korea card & High-Spice product spotlight"
+    },
+    "origin_vietnam_pho": {
+      "url": "https://images.unsplash.com/photo-1519077204685-ed90d0cc05b7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTV8MHwxfHNlYXJjaHw0fHxqYXBhbmVzZSUyMHJhbWVuJTIwYm93bCUyMG5vb2RsZXMlMjBzdGVhbXxlbnwwfHx8fDE3ODk3NjQ3ODd8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Fragrant star-anise beef and flat rice noodles with fresh mint and lime",
+      "placement": "Collections Vietnam card & Light Broth category"
+    },
+    "origin_thailand_pad_thai": {
+      "url": "https://images.unsplash.com/photo-1565976469782-7c92daebc42e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwzfHxhc2lhbiUyMG5vb2RsZXMlMjBnb3VybWV0JTIwZGlzaCUyMGJvd2x8ZW58MHx8fHwxNzg5NzY0Nzg3fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Bangkok street tamarind noodles with bean sprouts and crushed roasted peanuts",
+      "placement": "Collections Thailand card & Try & Buy counter highlight"
+    },
+    "retail_store_interior": {
+      "url": "https://images.unsplash.com/photo-1655522060985-6769176edff7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjByZXRhaWwlMjBncm9jZXJ5JTIwc3RvcmUlMjBpbnRlcmlvcnxlbnwwfHx8fDE3ODk3NjQ3OTd8MA&ixlib=rb-4.1.0&q=85",
+      "description": "NoodleWala Flagship Experience Store with curated regional noodle shelves and tasting island",
+      "placement": "Franchise Page flagship showcase & Store Locator hero"
+    },
+    "retail_store_shelves": {
+      "url": "https://images.unsplash.com/photo-1601600576337-c1d8a0d1373c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjByZXRhaWwlMjBncm9jZXJ5JTIwc3RvcmUlMjBpbnRlcmlvcnxlbnwwfHx8fDE3ODk3NjQ3OTd8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Curated specialty noodle packaging from international artisanal makers",
+      "placement": "Franchise Opportunity unit economics and About Page sourcing section"
+    }
+  },
+  "key_user_journeys_and_surfaces": [
+    {
+      "surface": "Header & Global Navigation",
+      "requirements": "Fixed/sticky with backdrop blur bg-[#F7FAF6]/90 border-b border-[#D7E4DC]. Left: Logo 'NoodleWala.com' with gold noodle swirl crest and tagline 'The World of Noodles'. Center desktop nav links: 'Home', 'Shop Noodles', 'Origin Collections', 'Try & Buy', 'Store Locator', 'Franchise', 'About'. Right CTA cluster: 'FIND A STORE' (secondary ghost button) + 'GET A FRANCHISE' (primary high-contrast button in #00704A with gold micro-accent) + Cart pill drawer + Mobile hamburger menu.",
+      "test_ids": ["nav-brand-logo", "nav-link-shop", "nav-link-collections", "nav-link-try-buy", "nav-link-stores", "nav-link-franchise", "nav-link-about", "nav-btn-find-store", "nav-btn-franchise", "nav-cart-trigger"]
+    },
+    {
+      "surface": "Home Page",
+      "sections": [
+        {
+          "name": "Hero Section",
+          "details": "Editorial split-asymmetric layout. Left: Eyebrow 'ORIGIN-CERTIFIED SPECIALTY RETAIL', H1 'The Grand Tour of World Noodles.', subtext explaining 80+ rare noodles from Tokyo to Bandung available in single packs & experiential tasting. CTAs: 'Explore Catalog' and 'Book Try & Buy Sampling'. Right: High-impact hero image with floating gold badge '8 Origins • 120+ Artisanal Varieties' and live counter 'Tasted by 45,000+ noodle lovers'."
+        },
+        {
+          "name": "Brand Credo / Marquee Ribbon",
+          "details": "Subtle editorial ticker: 'HOKKAIDO WHEAT • SICHUAN NUMBING PEPPERCORN • JEJU ISLAND BLACK GARLIC • CHENNAI SPICE INFUSION • HANOI STAR ANISE • BANDUNG SAMBAL TRADITION' with low contrast sage background and deep ink typography."
+        },
+        {
+          "name": "Explore by Origin Grid",
+          "details": "8 Curated Origin destinations: Japan (Ramen & Soba), Korea (Ramyeon & Jjajang), China (Dan Dan & Hand-pulled), Thailand (Pad Thai & Tom Yum), Vietnam (Pho & Bun Bo), Indonesia (Mie Goreng & Laksa), India (Desi Hakka & Masala Wheat), and World Specials (Italian Truffle Somen, Singapore Katong). Each with country flag, spice index, signature broth type, and direct filter link."
+        },
+        {
+          "name": "Featured Products Bento",
+          "details": "Interactive product cards with instant 'Quick View', 'Add to Cart', heat indicator (mild to extra fiery), pack size, price in INR, and 'Try & Buy Available' badge."
+        },
+        {
+          "name": "The Try & Buy Experience Promo",
+          "details": "Editorial feature block detailing the 3-step ritual: 1. Pick any noodle from shelf -> 2. Chef prepares a 90ml tasting cup at the live bar -> 3. Fall in love & take home the full crate. Direct CTA to locate a participating store."
+        },
+        {
+          "name": "Franchise Callout Band",
+          "details": "Deep green ink background (#063B2B) with gold foil accent typography: 'Bring NoodleWala to Your City. Low Capex, High Footfall Experiential Retail & Tasting Bar Model.' Button: 'Request Franchise Dossier'."
+        },
+        {
+          "name": "Store Discovery Teaser",
+          "details": "Quick city selector (Mumbai, Delhi-NCR, Bengaluru, Pune, Hyderabad, Chennai) showing live open status, today's sample broth on tap, and directions."
+        }
+      ]
+    },
+    {
+      "surface": "Shop / Product Discovery",
+      "features": "Search bar with debounce, multi-facet filtering (Origin, Heat 1-5, Diet: Veg/Non-Veg/Vegan, Style: Broth/Stir-Fry/Cold), Sort by Popularity, Spice Level, Price. Product card includes photo, tags, customer rating, price, 'Add to Cart' with quantity stepper, and 'Quick View' modal with nutrition breakdown and authentic recipe notes."
+    },
+    {
+      "surface": "Origin Collections Page",
+      "features": "Deep-dive into culinary heritage for Japan, Korea, China, Thailand, Vietnam, Indonesia, India, and World Specials. Each with historical context, wheat/flour milling tradition, spice profile, and filtered inventory."
+    },
+    {
+      "surface": "Try & Buy Sampling Page",
+      "features": "Interactive tasting guide: how it works, today's rotating tasting menu (e.g. 'Tuesday Tonkotsu Tasting', 'Thursday Thai Fire'), list of participating flagship stores with tasting bar slots, and instant sample reservation modal."
+    },
+    {
+      "surface": "Store Locator Page",
+      "features": "Filter by city, search by pincode or locality, check which stores have 'Live Try & Buy Tasting Bar', 'Artisanal Fresh Noodle Counter', parking availability, opening hours, one-click WhatsApp store inquiry, and Google Maps mock link."
+    },
+    {
+      "surface": "Franchise Page with Interactive Application",
+      "features": "Comprehensive business deck presentation: Unit economics (Store FOCO/FOFO formats: Kiosk 250 sqft, High-Street Retail 600 sqft, Experience Flagship 1200 sqft), ROI timeline (14-18 months), Support pillars (Supply chain direct from 8 nations, bar training, POS ERP). Multi-step interactive Franchise Application Form with instant validation and submission feedback."
+    },
+    {
+      "surface": "About Page",
+      "features": "Our Genesis: How founders traveled 14 Asian culinary regions to build India's first authentic specialty noodle retail haven. Ethical sourcing statement, noodle sommelier team, and quality pledge."
+    },
+    {
+      "surface": "Customer Care & Support Portal with Ticket Management",
+      "features": "Dual mode: 1. Create a Support Ticket (Order Issue, Store Feedback, Quality Inquiry, Franchise Support) with unique generated NW-TICKET-ID; 2. Live Ticket Status Check tab allowing users to enter ticket number and see stage (Received, Reviewing, Resolved)."
+    },
+    {
+      "surface": "Floating AI Sommelier Chat Launcher & Window",
+      "features": "Persistent bottom-right floating trigger with gold noodle badge. When opened: interactive 'NoodleWala AI Sommelier' capable of answering: 'Recommend a mild broth noodle', 'Which Korean noodle has real black bean paste?', 'What time does the Indiranagar store tasting bar close?', 'How to apply for franchise?' with smart quick prompt chips."
+    },
+    {
+      "surface": "Global Footer",
+      "features": "Dark Ink (#063B2B) contrast footer with oversized brand typography 'NOODLEWALA.COM', newsletter signup with gold submit button, certified stamps, origin countries list, franchise direct desk, customer care WhatsApp, copyright, and social links."
+    }
+  ],
+  "accessibility_and_testing": {
+    "wcag_compliance": "WCAG AA and APCA high-legibility guidelines. Text on background has minimum 8:1 contrast.",
+    "testing_attribute": "Every interactive button, input, tab, filter pill, modal trigger, card, and submit button MUST have a unique data-testid in kebab-case format.",
+    "keyboard_nav": "Full tab order with visible focus ring (focus:ring-2 focus:ring-[#00704A] focus:outline-none)."
+  },
+  "mock_data_and_features": {
+    "cart_state": "Client-side interactive slide-out cart with line items, quantity adjustment, subtotal, free shipping progress bar, and checkout simulation modal.",
+    "ticket_state": "Pre-seeded with 2 existing tickets (e.g. NW-8492 for Try&Buy reservation and NW-7301 for Store Inquiry) so users can immediately test the 'Check Ticket Status' functionality, plus interactive form to generate new ones.",
+    "chat_ai": "Intelligent client-side conversational AI Sommelier with curated culinary knowledge base and instant natural language answers + quick reply chips."
+  },
+  "instructions_to_main_agent": [
+    "Read /app/design_guidelines.json completely before writing code.",
+    "Implement the full multi-page experience cleanly inside the existing React single-page app architecture using react-router-dom or view-state routing with clean URL hash / path navigation.",
+    "Strictly honor the user's fixed color palette: Primary #00704A, Deep Green #063B2B, Dark Text #123D2D, Secondary #1B8A63, Gold Accent #C9A227, Light BG #F7FAF6, White #FFFFFF, Muted #5F6F67, Border #D7E4DC.",
+    "Load Google Fonts Playfair Display and IBM Plex Sans in index.html to guarantee distinct editorial luxury.",
+    "Ensure all interactive buttons, inputs, filter chips, cart buttons, and form triggers carry clear data-testid attributes.",
+    "Ensure the floating AI assistant chat is accessible from any page, and the dedicated Customer Care page features both Ticket Creation and Status Lookup.",
+    "Make the Try & Buy sampling experience prominent throughout the site — it is NoodleWala's unique experiential differentiator."
+  ]
+}
