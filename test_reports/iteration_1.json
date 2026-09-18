@@ -1,0 +1,24 @@
+{
+  "summary": "First iteration end-to-end testing of NoodleWala.com Release 1. All 25 backend tests pass (content endpoints, franchise, contact, tickets create + lookup with mobile verification, AI SSE streaming). Frontend flows tested via Playwright: home hero + CTAs, shop with 12 sample products, product detail with 'Information not available' fallbacks, collections grid + Japan detail, Try & Buy 5 steps + participating stores, store locator (Mumbai search filters to Bandra), franchise form validation + success message, contact form validation + success, AI chat launcher/quick chips/streamed reply (Gemini responded in ~4.5s)/clear chat, ticket dialog create -> NW-XXXXXX real ticket, ticket lookup success with matching mobile and verification failure with wrong mobile, mobile viewport drawer navigation, knowledge base loads. Brand audit clean across 11 routes — no 'Noodle Wala' with space. Footer copyright '© 2026 NoodleWala.com. All rights reserved.' renders on all pages.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {"ui_bugs": [], "integration_issues": [], "design_issues": []},
+  "test_report_links": [
+    "/app/backend/tests/backend_test.py",
+    "/app/test_reports/pytest/pytest_results.xml"
+  ],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "server.py is a single 648-line file; consider splitting into routers/models/seed modules for maintainability as Release 2 features arrive.",
+    "In-memory rate limiter (_hits dict) will not work across multiple worker processes; move to Redis or Mongo-backed limiter before scaling.",
+    "AI system prompt is rebuilt on every /api/ai/chat call (multiple Mongo queries + full knowledge base body). Cache with a TTL to reduce latency and DB load.",
+    "franchise-leads duplicate detection matches on either mobile OR email; a user with a shared email but new mobile silently gets 'existing' response. Consider clarifying UX or narrowing dedupe key.",
+    "Ticket lookup compares only last 10 digits of mobile — acceptable for India but document explicitly; short numbers (<10 digits) may false-match."
+  ],
+  "updated_files": ["/app/backend/tests/backend_test.py"],
+  "success_rate": {"backend": "100% (25/25)", "frontend": "100% of listed scenarios"},
+  "test_credentials": "N/A — no auth in Release 1. Tickets verified via mobile submitted at creation.",
+  "seed_data_creation": "None manually; startup seeds 8 collections, 12 sample products (labelled 'Sample listing'), 3 demo stores, 10 knowledge articles, site config. Created a few TEST_ prefixed franchise leads / contacts / tickets during testing.",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "Backend pytest suite at /app/backend/tests/backend_test.py covers all Release 1 endpoints including SSE streaming (looks for delta + done frames). Ticket testids: ticket-name-input, ticket-mobile-input, ticket-email-input, ticket-category-select, ticket-subject-input, ticket-description-input, ticket-consent-checkbox, ticket-submit-button, ticket-success, ticket-number. Contact form testids use 'contact-type' (not 'contact-enquiry-type'). Shop search is submit-triggered (needs shop-search-button click) not on-change. AI stream reply typically arrives in 3-6s but allow up to 45s for the assertion. All is green — no known outstanding issues."
+}
